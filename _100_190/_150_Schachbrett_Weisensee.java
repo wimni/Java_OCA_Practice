@@ -1,0 +1,56 @@
+package Uebungen._100_190;
+
+public class _150_Schachbrett_Weisensee
+{
+    public static void main(String[] args)
+    {
+        /*
+         * Schachbrett
+         *
+         * Schreibe ein Programm,
+         * das die Nummerierungen eines Schachbretts
+         * in der folgenden Form ausgibt:
+         *
+         * A8 B8 C8 D8 E8 F8 G8 H8
+         * A7 B7 C7 D7 E7 F7 G7 H7
+         * A6 B6 C6 D6 E6 F6 G6 H6
+         * A5 B5 C5 D5 E5 F5 G5 H5
+         * A4 B4 C4 D4 E4 F4 G4 H4
+         * A3 B3 C3 D3 E3 F3 G3 H3
+         * A2 B2 C2 D2 E2 F2 G2 H2
+         * A1 B1 C1 D1 E1 F1 G1 H1
+         */
+        for (int i = 8; i >= 1; i--)
+        {
+            for (char j = 'A'; j <= 'H'; j++)
+            {
+                System.out.print(j + "" + i + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static char getLetter(int i)
+    {
+        switch (i)
+        {
+            case 1:
+                return 'A';
+            case 2:
+                return 'B';
+            case 3:
+                return 'C';
+            case 4:
+                return 'D';
+            case 5:
+                return 'E';
+            case 6:
+                return 'F';
+            case 7:
+                return 'G';
+            case 8:
+                return 'H';
+        }
+        return 'Z';
+    }
+}
